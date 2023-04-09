@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    z-index: 1;
+    background-color: #233b65;
+    height: 55x;
+}
+
+nav .logo {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+nav .menu {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 7px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+}
+
+.menu ul li:active a {
+    background: #fff;
+    color: black;
+}
+
+.menu ul li a :hover {
+    background: yellow;
+    color: black;
+}
+
+.div_tonghinh {
+    position: relative;
+    top: 90px;
+    height: 706px;
+}
+
+.div_2hinhtren {
+    text-align: center;
+    padding: 0;
+}
+
+.div_2hinhduoi {
+    text-align: center;
+    padding: 0px;
+}
+
+.div_tieudetour {
+    position: relative;
+    top: 105px;
+    display: flex;
+    padding: 10px 90px 10px 20px;
+}
+
+.div_tieudechinh {
+    padding: 0px 0px 10px 100px;
+    text-align: left;
+    flex: 1;
+}
+
+.div_iconsale {
+    flex: 1;
+    text-align: right;
+}
+
+.div_tieudechinh span {
+    display: flex;
+}
+
+.div_iconsale button {
+    background: #f7be16;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 9px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    position: relative;
+}
+
+.div_iconsale button::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #f7be16;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: -15px;
+    right: 22px;
+}
+
+.div_iconsale p {
+    position: relative;
+    top: 10px;
+}
+
+.tieudetongquan {
+    position: relative;
+    top: 90px;
+    background-color: #234580;
+    padding: 10px 90px 10px 20px;
+    color: #fff;
+    margin: 0px 20px 0px 20px;
+}
+
+.div_tongquan {
+    position: relative;
+    top: 12px;
+}
+
+.div_noidungtongquan {
+    position: relative;
+    top: 108px;
+    padding: 0px 50px 0px 40px;
+    font-size: 20px;
+    border: 2px groove whitesmoke;
+    margin: 0px 20px 0px 20px;
+}
+
+.div_dichvu {
+    position: relative;
+    top: 38px;
+}
+
+.tieudedichvu {
+    position: relative;
+    top: 90px;
+    background-color: #234580;
+    padding: 10px 90px 10px 20px;
+    color: #fff;
+    margin: 0px 20px 0px 20px;
+}
+
+.div_noidungdichvu {
+    position: relative;
+    top: 111px;
+    border: 2px groove whitesmoke;
+    margin: 0px 20px 0px 20px;
+}
+
+.nd1,
+.nd2,
+.nd3,
+.nd5,
+.nd6,
+.nd7,
+.nd8 {
+    display: flex;
+    margin: 0px 20px 0px 20px;
+    padding: 10px 90px 10px 20px;
+    font-size: 20px;
+}
+
+.nd4 {
+    margin: 0px 20px 0px 20px;
+    padding: 10px 90px 10px 20px;
+    font-size: 20px;
+}
+
+.div_lichtrinh {
+    margin: 0px 20px 0px 20px;
+}
+
+.tieudelichtrinh {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.lichtrinhdi {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+}
+
+.active,
+.lichtrinhdi:hover {
+    background-color: #555;
+}
+
+.lichtrinhdi:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.noidung {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    font-size: 15px;
+}
+
+.lichtrinh_lienhe {
+    position: relative;
+    top: 165px;
+    display: flex;
+}
+
+.tieudelichtrinh {
+    padding: 10px;
+}
+
+.div_lichtrinh {
+    flex: 3;
+}
+
+.div_lienhe {
+    position: sticky;
+    top: 95px;
+    right: 13px;
+    background: #fff;
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    height: 350px;
+    flex: 1;
+}
+
+.yeucautuvan {
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    background: #1a3863;
+    color: #fff;
+    font-family: 'montserrat';
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.name,
+.phone,
+.Email,
+.nhapyeucautuvan,
+.btn_guiyeucau {
+    padding: 0 20px 10px 20px;
+    padding-left: 15px;
+    border: 1px solid #d6d6d6;
+    width: 80%;
+    background-color: #fff;
+    border: medium none;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #999;
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 24px;
+    margin-bottom: 20px !important;
+    text-align: center;
+}
+
+.btn_guiyeucau {
+    background-color: #1a3863;
+    color: #fff
+}
+
+.btn_guiyeucau a {
+    text-decoration: none;
+    background-color: #1a3863;
+    color: #fff
+}
+
+.div_ngaykhoihanh {
+    padding-top: 22px;
+}
+
+.tb_ngaykhoihanh {
+    width: 100%;
+    background: #fff;
+    margin: 30px 0 30px;
+    padding: 20px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+
+.tbchitiet {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tieudetb {
+    background-color: #1a3863;
+    color: #f1f1f1;
+}
+
+.tb_ngaykhoihanh,
+th,
+td {
+    border: 1px solid black;
+}
+
+.linkdattour a {
+    display: inline-block;
+    background: #1a3863;
+    text-decoration: none;
+    color: #fff !important;
+    padding: 1px 16px;
+    min-width: 75px;
+    font-weight: 500;
+    line-height: 3;
+    margin: 10px;
+}
+
+.khoihanh1,
+.khoihanh2,
+.khoihanh3,
+.khoihanh4,
+.khoihanh5 {
+    display: flex;
+    padding: 10px;
+}
+
+.iconkhoihanh {
+    flex: 1;
+}
+
+.noidungkhoihanh {
+    flex: 10;
+}
+
+.noidungkhoihanh span p {
+    font-weight: 400;
+}
+
+.cuoitrang {
+    position: relative;
+    top: 20px;
+    display: flex;
+}
+
+.iconlienhe1,
+.iconlienhe2,
+.iconlienhe3,
+.iconlienhe4 {
+    flex: 1;
+}
+
+.ttlhup {
+    display: flex;
+    justify-content: space-around;
+    background-color: bisque;
+    padding: 10px 100px 10px 100px;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.ttlh1,
+.ttlh2,
+.ttlh3,
+.ttlh4,
+.ttlh5 {
+    width: 100px;
+    height: 100px;
+    flex: 1;
+}
+
+.ttlhtong {
+    height: 100px;
+}
+
+.ttlhdown {
+    display: flex;
+    text-align: center;
+    padding: 50px 0px 50px 120px;
+    background-color: #234580;
+    position: relative;
+    bottom: 49px;
+}
+
+.ttlhdown_left p {
+    color: #fff;
+}
+
+.ttlhdown_right {
+    display: flex;
+}
+
+.ttlhdown_right p {
+    color: #fff;
+}
+
+.menu1 menu ul li {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+.menu2 menu ul li {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+    flex: 1;
+    line-height: 25px;
+}
+
+.menu3 ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu3 ul li {
+    list-style: none;
+}
+
+.ttlhdown_left {
+    padding-bottom: 5px;
+}
+
+.menu1 p,
+.menu2 p,
+.menu3 p {
+    font-weight: 600;
+}
+
+footer {
+    position: relative;
+    top: 320px;
+}

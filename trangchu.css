@@ -1,0 +1,488 @@
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                font-family: sans-serif;
+                                box-sizing: border-box;
+                            }
+                            
+                            header {
+                                position: relative;
+                                background-position: center;
+                                background-size: cover;
+                            }
+                            
+                            header::before {
+                                position: absolute;
+                                content: "";
+                                height: 100%;
+                                width: 100%;
+                            }
+                            
+                            nav {
+                                position: fixed;
+                                width: 100%;
+                                padding: 0px;
+                                z-index: 1;
+                                background-color: #233b65;
+                                height: 55x;
+                            }
+                            
+                            nav .logo {
+                                text-decoration: none;
+                                font-weight: 600;
+                                font-size: 30px;
+                            }
+                            
+                            nav .menu {
+                                max-width: 1200px;
+                                margin: auto;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0 20px;
+                            }
+                            
+                            .menu ul {
+                                display: flex;
+                            }
+                            
+                            .menu ul li {
+                                list-style: none;
+                                margin-left: 7px;
+                            }
+                            
+                            .menu ul li a {
+                                text-decoration: none;
+                                color: #fff;
+                                font-size: 18px;
+                                font-weight: 600;
+                                padding: 10px 20px;
+                                transition: all 0.5s ease;
+                            }
+                            
+                            .menu ul li:active a {
+                                background: #fff;
+                                color: black;
+                            }
+                            
+                            .menu ul li a :hover {
+                                background: yellow;
+                                color: black;
+                            }
+                            
+                            .carousel-item active img {
+                                width: 100%;
+                            }
+                            
+                            .carousel-item img {
+                                width: 100%;
+                                height: 600px;
+                            }
+                            
+                            .title {
+                                position: relative;
+                                bottom: 436px;
+                                width: 80%;
+                                height: 300px;
+                                text-align: center;
+                                left: 115px;
+                            }
+                            
+                            .div_btnheader {
+                                text-align: center;
+                                background-color: #234580;
+                                position: absolute;
+                                top: 107px;
+                                width: 100%;
+                            }
+                            
+                            .tt p {
+                                line-height: 41px;
+                                font-weight: 700;
+                                color: #fff;
+                                font-size: 68px;
+                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
+                            
+                            .divtong {
+                                padding: 10px;
+                                background-color: #234580;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            
+                            .div_input1 .div_input2 .div_input3 .div_input4 .div_input5 .div_btnsearch {
+                                flex: 1;
+                            }
+                            
+                            .div_input1 input {
+                                border: 1px solid #fff;
+                            }
+                            
+                            .div_input2 select {
+                                border: 3px solid #fff;
+                            }
+                            
+                            .div_input3 select {
+                                border: 3px solid #fff;
+                            }
+                            
+                            .div_input4 select {
+                                border: 3px solid #fff;
+                            }
+                            
+                            .div_input5 input {
+                                border: 1px solid #fff;
+                            }
+                            
+                            .div_btnsearch button {
+                                border: 1px solid #fff;
+                            }
+                            
+                            .div_btnsearch button a {
+                                text-decoration: none;
+                                color: #234580;
+                                font-weight: 500;
+                                padding: 5px;
+                            }
+                            
+                            div#carouselExampleControls {
+                                height: 600px;
+                            }
+                            
+                            .div_welcome {
+                                text-align: center;
+                                background-color: #fff;
+                                padding: 20px 40px 0px 40px;
+                            }
+                            
+                            .div_welcome p {
+                                font-size: 14px;
+                            }
+                            
+                            .div_tournoibat {
+                                text-align: center;
+                                color: #234580;
+                                font-size: 28px;
+                                font-weight: 600;
+                            }
+                            
+                            .icon::before {
+                                content: "";
+                                display: inline-block;
+                            }
+                            
+                            .div_tourtong {
+                                display: flex;
+                                padding: 50px;
+                                justify-content: space-around;
+                            }
+                            
+                            .div_tour1,
+                            .div_tour2,
+                            .div_tour3 {
+                                border: 1px solid #fff;
+                                flex: 1;
+                                text-align: center;
+                            }
+                            
+                            .content a {
+                                text-decoration: none;
+                                color: #234580;
+                                font-weight: 600;
+                            }
+                            
+                            .btn_xemthem {
+                                border: 1px solid #555;
+                                color: #555;
+                                background-color: #fff;
+                                padding: 10px 30px;
+                            }
+                            
+                            .div_xemthem a {
+                                text-decoration: none;
+                                color: #234580;
+                                font-weight: 600;
+                            }
+                            
+                            .div_xemthem {
+                                text-align: center;
+                            }
+                            
+                            .btn_xemthem img {
+                                text-align: center;
+                                position: absolute;
+                            }
+                            
+                            .div_diemden {
+                                text-align: center;
+                                color: #234580;
+                                font-size: 28px;
+                                font-weight: 600;
+                                padding: 10px;
+                            }
+                            
+                            .div_diemden3caidau {
+                                display: flex;
+                                justify-content: space-around;
+                                padding: 5px 100px 0 100px;
+                                text-align: center;
+                            }
+                            
+                            .div_diemden3caidau a {
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                            
+                            .div_diemden3caicuoi {
+                                display: flex;
+                                justify-content: space-around;
+                                padding: 10px 100px 10px 100px;
+                                text-align: center;
+                            }
+                            
+                            .div_diemden3caicuoi a {
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                            
+                            .diemden_danang p {
+                                position: relative;
+                                bottom: 112px;
+                                left: 3px;
+                                line-height: 41px;
+                                font-weight: 700;
+                                color: #fff;
+                                font-size: 35px;
+                            }
+                            
+                            .diemden_hochiminh p {
+                                position: relative;
+                                bottom: 112px;
+                                left: 7px;
+                                line-height: 41px;
+                                font-weight: 700;
+                                color: #fff;
+                                font-size: 35px;
+                            }
+                            
+                            .diemden_gialai p {
+                                position: relative;
+                                bottom: 112px;
+                                line-height: 41px;
+                                font-weight: 700;
+                                color: #fff;
+                                font-size: 35px;
+                            }
+                            
+                            .diemden_vungtau p {
+                                position: relative;
+                                bottom: 112px;
+                                left: 3px;
+                                line-height: 41px;
+                                font-weight: 700;
+                                color: #fff;
+                                font-size: 35px;
+                            }
+                            
+                            .diemden_dalat p {
+                                position: relative;
+                                bottom: 110px;
+                                left: 7px;
+                                line-height: 41px;
+                                font-weight: 700;
+                                color: #fff;
+                                font-size: 35px;
+                            }
+                            
+                            .diemden_khanhhoa p {
+                                position: relative;
+                                bottom: 112px;
+                                line-height: 41px;
+                                font-weight: 700;
+                                color: #fff;
+                                font-size: 35px;
+                            }
+                            
+                            .div_cammangdulich {
+                                text-align: center;
+                                color: #234580;
+                                font-size: 28px;
+                                font-weight: 600;
+                                padding: 10px;
+                            }
+                            
+                            .div_tongdiemden {
+                                border: 10px;
+                                padding: 10px 50px 10px 50px;
+                                text-align: center;
+                            }
+                            
+                            .diemden_danang,
+                            .diemden_hochiminh,
+                            .diemden_gialai {
+                                flex: 1;
+                                height: 205px;
+                            }
+                            
+                            .diemden_dalat,
+                            .diemden_khanhhoa,
+                            .diemden_vungtau {
+                                flex: 1;
+                                height: 205px;
+                            }
+                            
+                            .div_camnangtong {
+                                display: flex;
+                                padding: 10px 100px 10px 100px;
+                                border: 10px;
+                            }
+                            
+                            .div_camnang1,
+                            .div_camnang2,
+                            .div_camnang3 {
+                                flex: 1;
+                                padding: 10px;
+                            }
+                            
+                            .tieudecamnang {
+                                font-weight: 600;
+                            }
+                            
+                            .tieudecamnang a {
+                                text-decoration: none;
+                                color: #234580;
+                            }
+                            
+                            .imgcamnang1,
+                            .imgcamnang2,
+                            .imgcamnang3 {
+                                text-align: center;
+                            }
+                            
+                            .contentnho {
+                                width: 100%;
+                                font-size: 10px;
+                                padding: 5px;
+                            }
+                            
+                            .div_camnhankhachhang {
+                                text-align: center;
+                                font-size: 28px;
+                                font-weight: 600;
+                                color: #234580;
+                            }
+                            
+                            .camnhankhachhang {
+                                font-weight: 0;
+                                font-size: 14px;
+                                color: #234580;
+                            }
+                            
+                            .div_camnhan {
+                                justify-content: space-around;
+                                padding: 10px 150px 10px 150px;
+                                display: flex;
+                            }
+                            
+                            .div_2caidau,
+                            .div_2caisau {
+                                padding: 0;
+                                display: flex;
+                            }
+                            
+                            .hinh1,
+                            .hinh2,
+                            .hinh3,
+                            .hinh4 {
+                                flex: 1;
+                                height: 250px;
+                                width: 300px;
+                            }
+                            
+                            .ttlhup {
+                                display: flex;
+                                justify-content: space-around;
+                                background-color: bisque;
+                                padding: 10px 100px 10px 100px;
+                                text-align: center;
+                                position: relative;
+                                bottom: 50px;
+                            }
+                            
+                            .ttlh1,
+                            .ttlh2,
+                            .ttlh3,
+                            .ttlh4,
+                            .ttlh5 {
+                                width: 100px;
+                                height: 100px;
+                                flex: 1;
+                            }
+                            
+                            .ttlhdown {
+                                display: flex;
+                                text-align: center;
+                                padding: 50px 0px 50px 120px;
+                                background-color: #234580;
+                            }
+                            
+                            .ttlhdown_right {
+                                display: flex;
+                            }
+                            
+                            .menu1 menu ul li {
+                                text-decoration: none;
+                                list-style: none;
+                                color: #fff;
+                            }
+                            
+                            .menu2 menu ul li {
+                                text-decoration: none;
+                                list-style: none;
+                                color: #fff;
+                            }
+                            
+                            menu ul li a {
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                            
+                            .menu1,
+                            .menu2,
+                            .menu3 {
+                                flex: 1;
+                                line-height: 25px;
+                            }
+                            
+                            .menu3 ul li a {
+                                list-style: none;
+                                text-decoration: none;
+                                color: #fff;
+                            }
+                            
+                            .menu3 ul li {
+                                list-style: none;
+                            }
+                            
+                            .ttlhdown_left {
+                                padding-bottom: 5px;
+                            }
+                            
+                            footer {
+                                height: 100%;
+                            }
+                            
+                            .menu1 p,
+                            .menu2 p,
+                            .menu3 p {
+                                font-weight: 600;
+                            }
+                            
+                            .ttlhdown_left p {
+                                color: #fff;
+                            }
+                            
+                            .ttlhdown_right p {
+                                color: #fff;
+                            }

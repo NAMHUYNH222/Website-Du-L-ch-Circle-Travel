@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle- Đăng ký</title>
+    <link rel="stylesheet" href="DANGKY.CSS">
+    <script src="dangky.js"></script>
+
+</head>
+
+<body>
+    <header class=" header_trangchu ">
+        <nav>
+            <div class="menu ">
+                <div class="logo ">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/336618889_1192236804761250_62977703829501173_n.png?stp=dst-png_p206x206&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=5ljOCaOkcYEAX99P_aC&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSS4WphH570f2j5c68VMa5Wpzu5FV9j6PVtEcT2IAU54w&oe=64415344 "
+                        alt="logoweb " width="70px " height="70px ">
+                </div>
+                <ul>
+                    <li class="acive "> <a href="trangchu.html">TRANG CHỦ</a>
+                    </li>
+                    <li><a href="tourtong.html">TOURS</a></li>
+                    <li><a href="diadiemtong.html">ĐỊA ĐIỂM</a></li>
+                    <li><a href="blogstong.html">BLOGS</a></li>
+                    <li><a href="thuvienanhtourcatba.html">THƯ VIỆN ẢNH</a></li>
+                </ul>
+                <div class="logovietnam ">
+                    <img src="https://cdn-icons-png.flaticon.com/512/323/323319.png " width=" 20px " height="20px ">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="div_tong">
+        <form id="sheetdb-form" method="post" action="">
+            <div class="thongbao"></div>
+
+            <div class="tong_form">
+                <div class="div_formdangkychuyendi">
+                    <div class="tieudeform">
+                        <span>ĐĂNG KÝ CHUYẾN ĐI</span>
+                        <P>Hãy để chúng tôi giúp bạn lên kế hoạch cho một chuyến đi khó quên!!</P>
+                    </div>
+                    <div class="thoiluong">
+                        <label for="chuyendi">Vui Lòng Chọn Tour:</label>
+                        <select name="tour_id " required>
+                        <option value="4ngay3dem"> </option>
+                        <option value="4ngay3dem"> Tour 4 Ngày 3 Đêm</option>
+                        <option value="5ngay4dem"> Tour 5 Ngày 4 Đêm</option>
+                        <option value="6ngay5dem"> Tour 6 Ngày 5 Đêm</option>
+                        </select>
+                    </div>
+                    <div class="result"></div>
+                    <div class="nguoithamgia">
+                        <p>1.Có Bao Nhiêu Người Tham Gia?</p>
+                        <div class="dotuoi">
+                            <div class="nguoilon">
+                                <p>Người lớn</p>
+                                <select name="nguoilon">
+                                    <option value=" "></option>
+                                    <option value="soluong ">1</option>
+                                    <option value="soluong ">2</option>
+                                    <option value="soluong ">3</option>
+                                    <option value="soluong ">4</option>
+                                    <option value="soluong ">5</option>
+                                    <option value="soluong ">6</option>
+                                    <option value="soluong ">7</option>
+                                    <option value="soluong ">8</option>
+                                    <option value="soluong ">9</option>
+                                    <option value="soluong ">10</option>
+                                </select>
+                            </div>
+
+                            <div class="treem ">
+                                <p>Trẻ Em</p>
+
+                                <select name="treem ">
+                                    <option value=" "></option>
+                                    <option value="soluong ">1</option>
+                                    <option value="soluong ">2</option>
+                                    <option value="soluong ">3</option>
+                                    <option value="soluong ">4</option>
+                                    <option value="soluong ">5</option>
+                                    <option value="soluong ">6</option>
+                                    <option value="soluong ">7</option>
+                                    <option value="soluong ">8</option>
+                                    <option value="soluong ">9</option>
+                                    <option value="soluong ">10</option>
+                                </select>
+                            </div>
+
+                            <div class="tresosinh ">
+                                <p>Trẻ Sơ Sinh</p>
+                                <select name="tresosinh ">
+                                    <option value=" "></option>
+                                    <option value="soluong ">1</option>
+                                    <option value="soluong ">2</option>
+                                    <option value="soluong ">3</option>
+                                    <option value="soluong ">4</option>
+                                    <option value="soluong ">5</option>
+                                    <option value="soluong ">6</option>
+                                    <option value="soluong ">7</option>
+                                    <option value="soluong ">8</option>
+                                    <option value="soluong ">9</option>
+                                    <option value="soluong ">10</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="ngayden ">
+                        <label for="date ">2.Ngày đến:</label>
+                        <input type="date " name="date" min="2019-01-01 " max="2050-12-31 " required />
+                    </div>
+                    <div class="sanbayden ">
+                        <label for="sanbayden ">3.Sân Bay Đến:</label>
+                        <input type="text " name="data[sanbayden] " class="password " placeholder="Phù Cát " required />
+                    </div>
+                    <div class="noio ">
+                        <label for="checkbox">4.Chổ ở:</label><br>
+                        <input type="checkbox" name="choo" placeholder=" " /> Tiết kiệm (2*) <br>
+                        <input type="checkbox" name="choo" placeholder=" " /> Cao cấp (3*)<br>
+                        <input type="checkbox" name="choo" placeholder=" " /> Hạng nhất (4*)<br>
+                        <input type="checkbox" name="choo" placeholder=" " /> Hạng nhất (5*)
+                    </div>
+                    <div class="tengi ">
+                        <label for="name ">5.Họ và tên:</label>
+                        <input type="text " id="name" name="name " " placeholder="Huỳnh Phương Nam " pattern="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$ "
+                            required />
+                    </div>
+
+                    <div class="diachiemail ">
+                        <label for="mail ">6.Email:</label>
+                        <input type="email " name="mail "  class="mail " placeholder="abc@gmail.com " pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$ " required />
+                    </div>
+                    <div class="sodienthoai ">
+                        <label for="phone ">7.Số Điện Thoại:</label>
+                        <input type="tel " name="phone "  placeholder="0273456789 " pattern="^(0[234][0-9]{8}|1[89]00[0-9]{4})$ " required />
+                    </div>
+
+
+                    <div class="diachi ">
+                        <label for="onechar ">8.Địa chỉ:</label>
+                        <input type="text " name="address "  placeholder="x " required />
+                    </div>
+                    <div class="motachuyendi ">
+                        <p>9. Chuyến đi lý tưởng của bạn là gì?</p>
+                        <textarea cols="120 " rows="5 " name="mota " ></textarea>
+                    </div>
+                    <div class="div_submit ">
+                        <button><a href="dangkythanhcong.html ">Gửi</a></button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        <div class=" lienhequa ">
+
+            <div class="iconlienhe1 ">
+                <img src="https://static.chotot.com/storage/chotot-kinhnghiem/c2c/2020/08/cach-su-dung-iPhone-6-11.png " alt=" " width="38px " height="38px ">
+            </div>
+            <div class="iconlienhe2 ">
+                <img src="https://www.citypng.com/public/uploads/preview/-11597284182mlenplfp5n.png " alt=" " width="38px " height="38px ">
+            </div>
+            <div class="iconlienhe3 ">
+                <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Facebook-icon-1.png/640px-Facebook-icon-1.png " alt=" " width="38px " height="38px ">
+            </div>
+            <div class=" iconlienhe4 ">
+                <img src=" https://chukysobinhduong.vn/wp-content/uploads/2021/12/Facebook-Messenger-icon.png " alt=" " width="38px " height="38px ">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

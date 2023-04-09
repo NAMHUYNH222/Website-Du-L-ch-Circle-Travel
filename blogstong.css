@@ -1,0 +1,351 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    
+    header {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    header::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+    }
+    
+    nav {
+        position: relative;
+        width: 100%;
+        padding: 0px;
+        z-index: 1;
+        background-color: #233b65;
+        height: 55x;
+    }
+    
+    nav .logo {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    
+    nav .menu {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    
+    .menu ul {
+        display: flex;
+    }
+    
+    .menu ul li {
+        list-style: none;
+        margin-left: 7px;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 20px;
+        transition: all 0.5s ease;
+    }
+    
+    .menu ul li:active a {
+        background: #fff;
+        color: black;
+    }
+    
+    .menu ul li a :hover {
+        background: yellow;
+        color: black;
+    }
+    
+    .Tournoibat2023 {
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        color: #234580;
+        margin: 10px
+    }
+    
+    .div_tourtong {
+        display: flex;
+        padding: 10px 50px 10px 50px;
+        justify-content: space-around;
+    }
+    
+    .div_tour1,
+    .div_tour2,
+    .div_tour3 {
+        border: 1px solid #fff;
+        flex: 1;
+        text-align: center;
+        border: 2px solid whitesmoke;
+    }
+    
+    .img1 {
+        padding: 10px;
+    }
+    
+    .div_tour1 a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .div_tour2 a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .div_tour3 a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .div_tour1 p a {
+        color: #234580;
+    }
+    
+    .div_tour2 p a {
+        color: #234580;
+    }
+    
+    .div_tour3 p a {
+        color: #234580;
+    }
+    
+    .btn_xemthem {
+        border: 1px solid #555;
+        color: #555;
+        background-color: #fff;
+        padding: 10px 30px;
+    }
+    
+    .div_xemthem a {
+        text-decoration: none;
+        color: #234580;
+        font-weight: 600;
+    }
+    
+    .div_xemthem {
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+    }
+    
+    .btn_xemthem img {
+        text-align: center;
+        position: absolute;
+    }
+    
+    .lienhequa {
+        text-align: right;
+        position: sticky;
+        top: 105px;
+        width: 200px;
+        height: 100%;
+        flex: 1;
+    }
+    
+    .tonglayout {
+        display: flex;
+    }
+    
+    .ttlhtong {
+        height: 100px;
+    }
+    
+    .ttlhdown {
+        display: flex;
+        text-align: center;
+        padding: 50px 0px 50px 120px;
+        background-color: #234580;
+        position: relative;
+        bottom: 49px;
+    }
+    
+    .ttlhdown_left p {
+        color: #fff;
+    }
+    
+    .ttlhdown_right {
+        display: flex;
+    }
+    
+    .ttlhdown_right p {
+        color: #fff;
+    }
+    
+    .menu1 menu ul li {
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+    }
+    
+    .menu2 menu ul li {
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+    }
+    
+    menu ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .menu3 ul li a {
+        list-style: none;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .menu3 ul li {
+        list-style: none;
+    }
+    
+    .ttlhdown_left {
+        padding-bottom: 5px;
+    }
+    
+    .menu1 p,
+    .menu2 p,
+    .menu3 p {
+        font-weight: 600;
+    }
+    
+    footer {
+        position: relative;
+        top: 100px;
+        height: 100px;
+    }
+    
+    .ctkm p {
+        font-size: 16px;
+        margin-left: 50px;
+        color: #234580;
+        font-weight: bold;
+    }
+    
+    .kmdl p {
+        font-size: 16px;
+        margin-left: 50px;
+        font-weight: bold;
+        color: #234580;
+        font-weight: bold;
+    }
+    
+    .lichtrinhhapdan p {
+        font-size: 16px;
+        margin-left: 50px;
+        font-weight: bold;
+        color: #234580;
+        font-weight: bold;
+    }
+    
+    .content {
+        padding: 5px 20px 5px 20px;
+        text-align: left;
+    }
+    
+    .ttlhup {
+        display: flex;
+        justify-content: space-around;
+        background-color: bisque;
+        padding: 10px 100px 10px 100px;
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+    }
+    
+    .ttlh1,
+    .ttlh2,
+    .ttlh3,
+    .ttlh4,
+    .ttlh5 {
+        width: 100px;
+        height: 100px;
+        flex: 1;
+    }
+    
+    .ttlhtong {
+        height: 100px;
+    }
+    
+    .ttlhdown {
+        display: flex;
+        text-align: center;
+        padding: 50px 0px 50px 120px;
+        background-color: #234580;
+        position: relative;
+        bottom: 49px;
+    }
+    
+    .ttlhdown_left p {
+        color: #fff;
+    }
+    
+    .ttlhdown_right {
+        display: flex;
+    }
+    
+    .ttlhdown_right p {
+        color: #fff;
+    }
+    
+    .menu1 menu ul li {
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+    }
+    
+    .menu2 menu ul li {
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+    }
+    
+    menu ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .menu1,
+    .menu2,
+    .menu3 {
+        flex: 1;
+        line-height: 25px;
+    }
+    
+    .menu3 ul li a {
+        list-style: none;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .menu3 ul li {
+        list-style: none;
+    }
+    
+    .ttlhdown_left {
+        padding-bottom: 5px;
+    }
+    
+    .menu1 p,
+    .menu2 p,
+    .menu3 p {
+        font-weight: 600;
+    }
+    
+    footer {
+        position: relative;
+        height: 100px;
+    }
